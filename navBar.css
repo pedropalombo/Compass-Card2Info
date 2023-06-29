@@ -1,0 +1,12 @@
+/*review all colours*/
+#headerBar {
+    background-color: #32325D;
+    color: aliceblue;
+}
+
+#blogContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -50%;
+}

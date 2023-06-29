@@ -1,0 +1,48 @@
+<html>
+    <head> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+        <script> 
+        $(function(){
+          $("#navBar").load("navBar.html"); 
+        });
+        </script> 
+    </head>
+
+    <body>
+        <div id="navBar"></div>
+        
+        <section id="backBtnContainer">
+            <button id="backBtn">
+                &#x21A9;
+            </button>
+        </section>
+        
+        <section id="cardContainer">
+            <section id="cardFormat expanded">
+                <img id="cardImage expanded" src="/cardImagePlaceholder.png">
+                <p id="cardTopic expanded">
+                    The Future
+                </p>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </section>
+        </section>
+        
+        <section id="commentsContainer">
+            <section id="commentFormat">
+                <section id="userInfo">
+                    <span id="userId">
+                        usuario_1:
+                    </span>
+                    <span id="userEmail">
+                        user1@mail.com:
+                    </span>
+                </section>
+                <span>
+                    lorem ipsum is simply dummy text of the printing and typesetting industry
+                </span>
+            </section>
+        </section>
+    </body>
+</html>

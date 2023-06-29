@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type='text/css' rel="stylesheet" href="home.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $("#navBar").load("navBar.html");
+    });
+  </script>
+  <script type = "text/javascript" src="postsHome.ts">
+    function renderPosts() {
+    let cardContainer = document.getElementById('cardContainer');
+    posts.forEach(element => {
+
+        //creating elements 
+        let cardFormat = document.createElement('section');
+        let cardImage = document.createElement('img');
+        let cardTitle = document.createElement('p');
+        let cardBody = document.createElement('p');
+        let cardBtn = document.createElement('button');
+        let lineBreaker = document.createElement('br');
+
+        //creating elements' texts
+        let titleText = document.createTextNode(element.title);
+        let bodyText = document.createTextNode(element.body); 
+        let btnText = document.createTextNode('Expand...');
+
+        //setting ids
+        cardFormat.setAttribute('id', 'cardFormat');
+        cardImage.setAttribute('id', 'cardImage');
+        cardTitle.setAttribute('id', 'cardTopic');
+        cardBody.setAttribute('id', 'cardText');
+        cardBtn.setAttribute('id', 'cardBtn');
+
+        //setting texts
+        cardImage.src = '/cardImagePlaceholder.png'; 
+        cardFormat.appendChild(cardImage);
+
+        cardTitle.appendChild(titleText)
+        cardFormat.appendChild(cardTitle);
+
+        cardBody.appendChild(bodyText);
+        cardFormat.appendChild(cardBody);
+
+        cardBtn.appendChild(btnText);
+        cardFormat.appendChild(cardBtn);
+
+        cardFormat.appendChild(lineBreaker)
+
+        //appending to DOM
+        cardContainer?.appendChild(cardFormat);
+    });
+}
+  </script>
+
+</head>
+
+<body>
+  <div id="navBar">
+
+  </div>
+
+  <!-- TODO: make it language-dynamic -->
+  <section id="topContainer">
+    <p id="sectionText">
+      User posts
+    </p>
+    <hr id="sectionUnderline">
+  </section>
+
+  <!-- TODO: review HTML lessons -->
+  <section id="cardsContainer" onload="renderPosts()">
+  </section>
+</body>
+
+</html>
