@@ -1,5 +1,6 @@
 <html>
     <head> 
+        <link type='text/css' rel="stylesheet" href="post/post.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
         <script> 
         $(function(){
@@ -17,10 +18,10 @@
             </button>
         </section>
         
-        <section id="cardContainer">
-            <section id="cardFormat expanded">
-                <img id="cardImage expanded" src="/cardImagePlaceholder.png">
-                <p id="cardTopic expanded">
+        <section class="cardContainer">
+            <section class="cardFormat expanded">
+                <img class="cardImage expanded" src="/cardImagePlaceholder.png">
+                <p class="cardTopic expanded">
                     The Future
                 </p>
                 <p>
@@ -29,9 +30,9 @@
             </section>
         </section>
         
-        <section id="commentsContainer">
-            <section id="commentFormat">
-                <section id="userInfo">
+        <section class="commentsContainer">
+            <section class="commentFormat">
+                <section class="userInfo">
                     <span id="userId">
                         usuario_1:
                     </span>
@@ -39,10 +40,39 @@
                         user1@mail.com:
                     </span>
                 </section>
-                <span>
+                <span id="userComment">
                     lorem ipsum is simply dummy text of the printing and typesetting industry
                 </span>
-            </section>
+            </section><br />
+
+            <section class="commentFormat">
+                <section id="userInfo">
+                    <span id="userId">
+                        usuario_2:
+                    </span>
+                    <span id="userEmail">
+                        user2@mail.com:
+                    </span>
+                </section>
+                <span id="userComment">
+                    lorem ipsum is simply dummy text of the printing and typesetting industry
+                </span>
+            </section> <br />
+
+            <section class="commentFormat">
+                <section id="userInfo">
+                    <span id="userId">
+                        usuario_3:
+                    </span>
+                    <span id="userEmail">
+                        user3@mail.com:
+                    </span>
+                </section>
+                <span id="userComment">
+                    lorem ipsum is simply dummy text of the printing and typesetting industry
+                </span>
+            </section> <br />
+
         </section>
     </body>
 </html>

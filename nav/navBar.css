@@ -2,6 +2,7 @@
 #headerBar {
     background-color: #32325D;
     color: aliceblue;
+    margin: 0;
 }
 
 #blogContainer {

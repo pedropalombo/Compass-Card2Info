@@ -1,5 +1,50 @@
-                                        function goToPost() {
-    //window.location.assign = "post/post.html";
+var posts : Post[] = [
+    {
+        id: 1,
+        title: "suriname",
+        imageUrl: "aa",
+        body: "lorem brolem colem strole"
+    },
+    {
+        id: 2,
+        title: "pastrame",
+        imageUrl: "aa",
+        body: "bangalang seimo xame"
+    },
+    {
+        id: 3,
+        title: "morinome",
+        imageUrl: "aa",
+        body: "quimbim drimstim dorencoda"
+    },
+    {
+        id: 4,
+        title: "constacobre",
+        imageUrl: "aa",
+        body: "pirimban toracopra sum barama"
+    },
+    {
+        id: 5,
+        title: "pizzapasta",
+        imageUrl: "aa",
+        body: "maletuza facuntinda serunia borupia"
+    },
+    {
+        id: 6,
+        title: "formacrista",
+        imageUrl: "aa",
+        body: "stomeriza conpaza fricamontunda"
+    }
+];
+
+const card = document.getElementById('cardBtn');
+card?.addEventListener('click', function handleClick(event) {
+    console.log("deu bom");
+  });
+
+function goToPost() {
+    //window.location.href = "/post.html";
+    alert("deu bom");
 }
 
 function renderPosts() {
@@ -27,7 +72,7 @@ function renderPosts() {
         cardBtn.setAttribute('id', 'cardBtn');
 
         //setting texts
-        cardImage.src = '/cardImagePlaceholder.png'; 
+        cardImage.src = '/imgs/cardImagePlaceholder.png'; 
         cardFormat.appendChild(cardImage);
 
         cardTitle.appendChild(titleText)

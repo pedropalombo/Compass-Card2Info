@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link type='text/css' rel="stylesheet" href="./home.css">
+  <scrip type="javascript/typescript" src="./postsHome.ts"></scrip>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $("#navBar").load("/nav/navBar.html");
+    });
+  </script>
+</head>
+
+<body>
+  <div id="navBar"></div>
+
+  <!-- TODO: make it language-dynamic -->
+  <section id="topContainer">
+    <p id="sectionText">
+      User posts
+    </p>
+    <hr id="sectionUnderline">
+  </section>
+
+  <!-- TODO: review HTML lessons -->
+  <section id="cardsContainer">
+    <section id="cardsRow">
+      <section id="cardFormat">
+        <img id="cardImage" src="/imgs/cardImagePlaceholder.png">
+        <p id="cardTopic">
+          ${element.title}
+        </p>
+        <p>
+          ${element.body}
+        </p>
+        <button id="cardBtn">
+          Expand...
+        </button>
+      </section>
+      <section id="cardFormat">
+        <img id="cardImage" src="/imgs/cardImagePlaceholder.png">
+        <p id="cardTopic">
+          ${element.title}
+        </p>
+        <p>
+          ${element.body}
+        </p>
+        <button id="cardBtn">
+          Expand...
+        </button>
+      </section>
+      <section id="cardFormat">
+        <img id="cardImage" src="/imgs/cardImagePlaceholder.png">
+        <p id="cardTopic">
+          ${element.title}
+        </p>
+        <p>
+          ${element.body}
+        </p>
+        <button id="cardBtn">
+          Expand...
+        </button>
+      </section>
+    </section> <br />
+
+    <section id="cardsRow">
+      <section id="cardFormat">
+        <img id="cardImage" src="/imgs/cardImagePlaceholder.png">
+        <p id="cardTopic">
+          ${element.title}
+        </p>
+        <p>
+          ${element.body}
+        </p>
+        <button id="cardBtn">
+          Expand...
+        </button>
+      </section>
+      <section id="cardFormat">
+        <img id="cardImage" src="/imgs/cardImagePlaceholder.png">
+        <p id="cardTopic">
+          ${element.title}
+        </p>
+        <p>
+          ${element.body}
+        </p>
+        <button id="cardBtn">
+          Expand...
+        </button>
+      </section>
+      <section id="cardFormat">
+        <img id="cardImage" src="/imgs/cardImagePlaceholder.png">
+        <p id="cardTopic">
+          ${element.title}
+        </p>
+        <p>
+          ${element.body}
+        </p>
+        <button id="cardBtn">
+          Expand...
+        </button>
+      </section>
+    </section> <br />
+  </section>
+
+</body>
+
+</html>
