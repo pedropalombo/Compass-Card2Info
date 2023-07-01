@@ -39,7 +39,7 @@ var posts : Post[] = [
 
 const card = document.getElementById('cardBtn');
 card?.addEventListener('click', function handleClick(event) {
-    console.log("deu bom");
+    window.location.href = "/post/post.html";
   });
 
 function goToPost() {
