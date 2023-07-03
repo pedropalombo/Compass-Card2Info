@@ -1,29 +1,127 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+#topContainer {
+    margin-top: 15vh;
+    margin-bottom: 7vh;
+    
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-align: left;
+
+}
+
+#sectionText {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 600;
+
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-align: left;
+
+    color: #3A4F9A;
+
+    margin-bottom: 0;
+
+    margin-left: 4vh;
+
+    font-family: 'Inter', sans-serif!important;
+}
+
+hr {
+    position: absolute;
+    float: left;
+
+    background-color: #3A4F9A;
+    color: #3A4F9A;
+
+    font-weight: 600;
+
+    width: 230px;
+    height: 2px;
+
+    margin-left: 4vh;
+}
+
 #cardsRow {
     position: relative;
+
     display: grid;
     justify-content: center;
+
     grid-template-columns: repeat(3, calc(33.33% - 20px));
 
+    margin-top: 3vh;
 }
 
 #cardFormat {
     display: block;
-    border: 2px black solid;
+
+    border-left: 0.5px rgba(0, 0, 0, 0.212) solid;
+    border-right: 0.5px rgba(0, 0, 0, 0.212) solid;
+    border-bottom: 0.5px rgba(0, 0, 0, 0.212) solid;
+
+    border-bottom-left-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+
+    box-shadow: 0 2px #88888850;
+
     max-width: 300px;
     max-height: 700px;
 
     margin: 0;
 
     box-shadow: inset;
+
 }
 
 #cardImage {
-    width:300px;
-    height: 200px;
     object-fit:contain;
+
+    height: auto;
+
+    max-width:300px;
+    max-height: 200px;
+}
+
+.cardInfo {
+    margin-left: 2vh;
+}
+
+.cardTopic {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+
+    color: #3A4F9A;
+}
+
+.cardText {
+    font-size: 13px;
+    font-weight: 300;
+
+    color: #575757c9;
 }
 
 #cardBtn {
     float: right;
     position: relative;
+
+    font-weight: 700;
+    font-size: 13px;
+
+    color: #3A4F9A;
+    
+    background-color: transparent;
+    border: none;
+
+    margin-bottom: 1vh;
+
+    cursor: pointer;
 }

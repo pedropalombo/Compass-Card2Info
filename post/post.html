@@ -1,10 +1,11 @@
 <html>
     <head> 
-        <link type='text/css' rel="stylesheet" href="post/post.css">
+        <link type='text/css' rel="stylesheet" href="/post/post.css">
+        <link type='text/css' rel="stylesheet" href="/nav/navBar.css">  
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
         <script> 
         $(function(){
-          $("#navBar").load("navBar.html"); 
+          $("#navBar").load("/nav/navBar.html"); 
         });
         </script> 
     </head>
@@ -13,65 +14,85 @@
         <div id="navBar"></div>
         
         <section id="backBtnContainer">
-            <button id="backBtn">
-                &#x21A9;
-            </button>
+            <a href="/home/home.html">
+                <button id="backBtn">
+                    &#x21A9;
+                </button>
+            </a>
         </section>
         
         <section class="cardContainer">
             <section class="cardFormat expanded">
-                <img class="cardImage expanded" src="/cardImagePlaceholder.png">
-                <p class="cardTopic expanded">
-                    The Future
-                </p>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
+                <!-- src=${post.imageUrl}: -->
+                <img class="cardImage expanded" src="/imgs/hylics.jpg">
+                
+                <div class="cardDescription">
+                    <p class="cardTopic expanded">
+                        <!-- ${post.title}: -->
+                        Hylics 3: Le Movie
+                    </p>
+                    <p class="cardText">
+                        Hylics takes place on an archipelago in a world implied to be posthuman and is divided into 3 acts, each one beginning with a prelude roughly describing the current plot events using partially randomly generated sentences. The primary goal of the film is to defeat Gibby, King of the Moon.
+                    </p>
+                </div>
+                
             </section>
-        </section>
+        </section><br />
         
         <section class="commentsContainer">
             <section class="commentFormat">
-                <section class="userInfo">
+                <section id="userInfo">
                     <span id="userId">
-                        usuario_1:
+                        <!-- ${regexUser(post.email)}: -->
+                        marc1anito:
                     </span>
                     <span id="userEmail">
-                        user1@mail.com:
+                        <!-- ${post.email}: -->
+                        marc1anito@yahoo.com:
                     </span>
+                    <span id="userComment">
+                        <!-- ${post.body}-->
+                        hmmmm nn gostei mt
+                    </span>
+                    <hr>
                 </section>
-                <span id="userComment">
-                    lorem ipsum is simply dummy text of the printing and typesetting industry
-                </span>
-            </section><br />
+            </section>
 
             <section class="commentFormat">
                 <section id="userInfo">
                     <span id="userId">
-                        usuario_2:
+                        <!-- ${regexUser(post.email)}: -->
+                        2ualetra:
                     </span>
                     <span id="userEmail">
-                        user2@mail.com:
+                        <!-- ${post.email}: -->
+                        2ualetra@mail.net:
                     </span>
+                    <span id="userComment">
+                        <!-- ${post.body}-->
+                        parece bom, mas acabei nem assistindo
+                    </span>
+                    <hr>
                 </section>
-                <span id="userComment">
-                    lorem ipsum is simply dummy text of the printing and typesetting industry
-                </span>
-            </section> <br />
+            </section>
 
             <section class="commentFormat">
                 <section id="userInfo">
                     <span id="userId">
-                        usuario_3:
+                        <!-- ${regexUser(post.email)}: -->
+                        tridente:
                     </span>
                     <span id="userEmail">
-                        user3@mail.com:
+                        <!-- ${post.email}: -->
+                        tridente@outlook.com:
                     </span>
+                    <span id="userComment">
+                        <!-- ${post.body}-->
+                        fica bom da metade pra frente, na minha opinião
+                    </span>
+                    <hr>
                 </section>
-                <span id="userComment">
-                    lorem ipsum is simply dummy text of the printing and typesetting industry
-                </span>
-            </section> <br />
+            </section>
 
         </section>
     </body>

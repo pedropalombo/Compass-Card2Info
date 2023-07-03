@@ -1,37 +1,37 @@
 var posts : Post[] = [
     {
         id: 1,
-        title: "suriname",
+        title: "Suriname",
         imageUrl: "aa",
         body: "lorem brolem colem strole"
     },
     {
         id: 2,
-        title: "pastrame",
+        title: "Pastrame",
         imageUrl: "aa",
         body: "bangalang seimo xame"
     },
     {
         id: 3,
-        title: "morinome",
+        title: "Morinome",
         imageUrl: "aa",
         body: "quimbim drimstim dorencoda"
     },
     {
         id: 4,
-        title: "constacobre",
+        title: "Constacobre",
         imageUrl: "aa",
         body: "pirimban toracopra sum barama"
     },
     {
         id: 5,
-        title: "pizzapasta",
+        title: "Pizzapasta",
         imageUrl: "aa",
         body: "maletuza facuntinda serunia borupia"
     },
     {
         id: 6,
-        title: "formacrista",
+        title: "Formacrista",
         imageUrl: "aa",
         body: "stomeriza conpaza fricamontunda"
     }

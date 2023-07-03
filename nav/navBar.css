@@ -1,13 +1,39 @@
 /*review all colours*/
 #headerBar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    margin: 0;
+
+    font-weight: 600;
+
     background-color: #32325D;
     color: aliceblue;
-    margin: 0;
+
+    box-shadow: 0 3px #8888882d;
+}
+
+#navImage {
+    margin-right: 8px;
+
+    width: 28px;
+    height: 28px;
 }
 
 #blogContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    left: -50%;
+
+    margin-left: 3vh;
+    padding: 15px;
+}
+
+#navText {
+    font-size: 24px!important;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: white;
 }
